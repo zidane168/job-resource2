@@ -4,7 +4,7 @@ import './../app/scrollingText.css'; // Import your CSS file
 const ScrollingText = ({ text } : { text : string }) => {
     return (
         <div className="scrolling-container">
-            <div className="font-bold text-blue-600 scrolling-text">{text}</div>
+            <div className="px-2 font-bold text-white bg-blue-700 rounded-md scrolling-text">{text}</div>
         </div>
     );
 };

@@ -2,13 +2,16 @@
 
 import { SummaryList } from "@/component/SummaryList";
 import Image from "next/image";
-import { useEffect, useState } from "react"; 
+import { ChangeEvent, useEffect, useState } from "react"; 
 import useStore from "../store/job";
 import ScrollingText from "@/component/ScrollText";
+import Link from "next/link";
 
 export default function Home() {
     const { jobs, page, loading, error, limit, fetchJobs }  = useStore()
-    const [ remind, setRemind ] = useState('') 
+    const [ remind, setRemind ] = useState<string>('') 
+
+    const [ position, setPosition ] = useState<string>('')
 
     useEffect(() => {  
         fetchJobs( );  
@@ -21,6 +24,19 @@ export default function Home() {
         setRemind( str )
     }, [] ); 
 
+    const onClickSearch = ( ) => { 
+      fetchJobs( position );  
+    }
+
+    const handlePositionChange = (e: ChangeEvent<HTMLInputElement> ) => {
+      setPosition(e.target.value)
+    }
+
+    const onClickReset = () => { 
+      setPosition('')
+      fetchJobs( );  
+    }
+
     return ( 
     <>
       <div className='container flex justify-center w-full mx-auto'>
@@ -31,6 +47,24 @@ export default function Home() {
         
         <ScrollingText text={ remind } />
 
+        <div className="flex items-center w-full gap-2 mt-2">
+          <div className="flex gap-2 grow w-lg">
+            <input className="p-2 border-2 border-purple-500 rounded-md w-lg" placeholder="position" value={ position }  onChange={ handlePositionChange } />
+            
+          </div>
+          <div className="flex gap-2">   
+            <div> 
+              <button onClick={ onClickSearch } className="p-2 text-white bg-pink-600 rounded-md hover:bg-pink-300 hover:cursor-pointer w-xs"> Search </button>
+            </div>
+
+            <div> 
+              <button onClick={ onClickReset } className="p-2 text-white bg-purple-600 rounded-md hover:bg-purple-300 hover:cursor-pointer w-xs"> 
+                Reset 
+              </button> 
+            </div>
+          </div>
+        </div>
+
         {/* 
         ko cần form 
         <div className='flex gap-4 mb-[40px] mt-[20px]'>
@@ -39,7 +73,11 @@ export default function Home() {
           <button type="submit" className="p-2 font-bold text-white uppercase bg-purple-500 rounded-md"> Search </button>
         </div> */}
 
-        <SummaryList jobs={ jobs } />
+        { jobs.length == 0 && "NO JOBS AVAILABLE NOW, PLEASE COME BACK LATER "} 
+
+        { jobs && <SummaryList jobs={ jobs } /> }
+
+      
       
       </div>
     </> 

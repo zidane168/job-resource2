@@ -15,8 +15,7 @@ export const jobs = [
             "🚀 **Launch**: Launch the final features/products to the market, clearly communicate product values to users and internal stakeholders.",
             "📐 **Measure**: Define success metrics, learn from numbers and customer feedback to improve the products.",
             "🎓 **Learn**: Learn from what you built and shipped, continuously experiment and enhance the quality of the products.",
-            "⭐ **Lead**: Own the products/features, become a decision-maker, and inspire your teammates to achieve the missions together.",
- 
+            "⭐ **Lead**: Own the products/features, become a decision-maker, and inspire your teammates to achieve the missions together.", 
         ],
         notes: [  
         ],
@@ -254,7 +253,7 @@ export const jobs = [
             "HCM", 
         ],
         postDate: "2025/16/05",  
-        salary: "Nego", 
+        salary: "Negotiable", 
         workingTime: "Flexible start 8AM-9AM from Mon-Fri",
     },
     {
