@@ -25,6 +25,27 @@ const useStore = create(( set, get ) => ({  // set, get theo thu tu nha, sai la 
     } 
   },
 
+  fetchJobsSearch: (location = 1, title = null) => { 
+
+    set({ loading: true, error: null})
+    let jobLists = jobs
+    if (location == 1) {
+      jobLists = jobs.filter( job => job.location.includes( "Remote" ))
+
+    } else if (location == 2) {
+      jobLists = jobs.filter( job => job.location.include( "Onsite" ))
+
+    } else if (location == 3) {
+      jobLists = jobs.filter( job => job.location.include( "Hybrid" ))
+    }
+
+    if (title) {
+      jobLists = jobLists.filter( job => job.title.toLowerCase() == title.toLowerCase() )
+    }
+
+    set({ loading: false, jobs: jobLists})
+  },
+
   getCurrentJob: (jobCode) => {
     const job = jobs.find( (job) => job.jobCode == jobCode )  
     set({ currentJob: job, loading: false })

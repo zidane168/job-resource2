@@ -65,9 +65,9 @@ export const jobs = [
         level: [
            "Experience from Junior to Senior"
         ],
-        location: [   
-            "HCM",
+        location: [               
             "Hybrid",
+            "HCM",
             "District 3"
         ],
         postDate: "2025/21/04",  
@@ -124,7 +124,9 @@ export const jobs = [
         level: [
             "Senior (5-10 YOE), Lead"
         ],
-        location: [  
+        location: [              
+            "Remote",
+            "Hybrid",
             "HCM",
             "District 1", 
             "Da Kao",
@@ -182,7 +184,7 @@ export const jobs = [
             "2+ YoE"
         ],
         location: [  
-            "Ha Noi",
+            "Hà Nội",
             "Cầu Giấy"
 
         ],
@@ -247,8 +249,8 @@ export const jobs = [
            
         ],
         location: [ 
-            "Dong Da District",
-            "Hanoi",
+            "Đống Đa District",
+            "Hà Nội",
             "District 4",
             "HCM", 
         ],
@@ -310,9 +312,9 @@ export const jobs = [
         level: [
             "Middle (3-5 YOE), Lead"
         ],
-        location: [ 
-            "HCM",
+        location: [             
             "Onsite",
+            "HCM",
             "District 4"
         ],
         postDate: "2025/16/05", 
@@ -372,7 +374,10 @@ export const jobs = [
         level: [],
         location: [ 
             "Hybrid",
-            "Dien Bien Phu, Da Kao Ward, District 1, Ho Chi Minh"
+            "Điện Biên Phủ",
+            "Da Kao Ward",
+            "District 1",
+            "HCM"
         ],
         postDate: "2024/06/11", 
         salaryRange: [

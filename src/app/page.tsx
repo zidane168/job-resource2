@@ -4,14 +4,14 @@ import { SummaryList } from "@/component/SummaryList";
 import Image from "next/image";
 import { ChangeEvent, useEffect, useState } from "react"; 
 import useStore from "../store/job";
-import ScrollingText from "@/component/ScrollText";
-import Link from "next/link";
+import ScrollingText from "@/component/ScrollText"; 
 
 export default function Home() {
     const { jobs, page, loading, error, limit, fetchJobs }  = useStore()
-    const [ remind, setRemind ] = useState<string>('') 
-
+    const [ remind, setRemind ] = useState<string>('')    
+ 
     const [ position, setPosition ] = useState<string>('')
+    const [selectedOption, setSelectedOption] = useState('');
 
     useEffect(() => {  
         fetchJobs( );  
@@ -35,8 +35,12 @@ export default function Home() {
     const onClickReset = () => { 
       setPosition('')
       fetchJobs( );  
-    }
+    } 
 
+    const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
+        setSelectedOption(event.target.value);
+    };
+ 
     return ( 
     <>
       <div className='container flex justify-center w-full mx-auto'>
@@ -45,20 +49,30 @@ export default function Home() {
 
       <div className='container  mx-auto  mt-[10px] mb-[20px]'>
         
-        <ScrollingText text={ remind } />
-
-        <div className="flex items-center w-full gap-2 mt-2">
-          <div className="flex gap-2 grow w-lg">
-            <input className="p-2 border-2 border-purple-500 rounded-md w-lg" placeholder="position" value={ position }  onChange={ handlePositionChange } />
-            
+        <ScrollingText text={ remind } /> 
+        <div className="flex items-center w-full gap-2 mt-2 p-2 shadow-lg rounded-md">
+          <div className="flex gap-2 grow w-lg items-center">
+            <input className="hover:border-purple-300 p-2 border-2 border-purple-500 rounded-md w-full md:w-lg" placeholder="position" value={ position }  onChange={ handlePositionChange } />
+  
+            <div> 
+                <select id="comboBox" value={selectedOption} onChange={handleChange}
+                  className="hover:border-purple-300 p-2 border-2 border-purple-500 rounded-md w-full md:w-lg"  >
+                    <option value="">Select an option</option> 
+                    <option value="option_remote">Remote</option>                    
+                    <option value="option_onsite">Onsite</option>
+                    <option value="option_hybrid">Hybrid</option>
+                    <option value="option_freelance">Freelance</option>
+                </select> 
+            </div> 
           </div>
+
           <div className="flex gap-2">   
             <div> 
-              <button onClick={ onClickSearch } className="p-2 text-white bg-pink-600 rounded-md hover:bg-pink-300 hover:cursor-pointer w-xs"> Search </button>
+              <button onClick={ onClickSearch } className="p-2 text-white bg-pink-600 rounded-md hover:bg-pink-300 hover:cursor-pointer w-[100px]"> Search </button>
             </div>
 
             <div> 
-              <button onClick={ onClickReset } className="p-2 text-white bg-purple-600 rounded-md hover:bg-purple-300 hover:cursor-pointer w-xs"> 
+              <button onClick={ onClickReset } className="p-2 text-white bg-purple-600 rounded-md hover:bg-purple-300 hover:cursor-pointer w-[100px]"> 
                 Reset 
               </button> 
             </div>
@@ -73,12 +87,12 @@ export default function Home() {
           <button type="submit" className="p-2 font-bold text-white uppercase bg-purple-500 rounded-md"> Search </button>
         </div> */}
 
-        { jobs.length == 0 && "NO JOBS AVAILABLE NOW, PLEASE COME BACK LATER "} 
+        { 
+          jobs.length == 0 && 
+            <div className='h-[800px] w-full shadow-lg rounded-md text-[50px] flex items-center justify-center mt-4 text-red-500'> NO JOBS AVAILABLE NOW, PLEASE COME BACK LATER </div>
+        } 
 
-        { jobs && <SummaryList jobs={ jobs } /> }
-
-      
-      
+        { jobs && <SummaryList jobs={ jobs } /> } 
       </div>
     </> 
   );
