@@ -12,7 +12,7 @@ const useStore = create(( set, get ) => ({  // set, get theo thu tu nha, sai la 
 
   fetchJobs: (title = null) => {
     set({ loading: true, error: null }) 
-    const jobLists = jobs.filter( job => job.status == "OPEN" ) 
+    const jobLists = jobs.filter( job => job.status.toLowerCase() == "open" || job.status.toLowerCase() == "urgent" ).sort((a, b) => b.id - a.id) 
 
     if (title) {
       const filterJobs = jobLists.filter( (job) => {

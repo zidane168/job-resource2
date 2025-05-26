@@ -6,6 +6,7 @@ import { ProcessInterviewIcon } from "./icons/processInterviewIcon";
 import Link from "next/link";
 import { LevelIcon } from "./icons/levelIcon";
 import { LocationIcon } from "./icons/locationIcon";
+import UrgentIcon from "./icons/urgentIcon";
 
 export function Summary( { job } : { job : IJob}  ) {  
     return (
@@ -28,26 +29,31 @@ export function Summary( { job } : { job : IJob}  ) {
                          </div>
                     </div>
                 )}
-
-                 <div className="flex items-center gap-2">
+ 
+                <div className="flex items-center gap-2">
                     <div> <LocationIcon /> </div> 
                     <div className='mt-[5px] flex gap-2 mb-2 '>
                         <span className="font-bold underline"> Location: </span>  
                         { job.location.map( (loc, index) => {
                             return   <div key={ index } className='text-[14px] font-bold rounded-md bg-amber-200 px-2  text-center'> { loc } </div>
                         })} 
-                   </div>      
-                </div> 
+                    </div>      
+                </div>  
 
-                <div>
-                    <span className="flex items-center gap-2 font-bold">   <DomainIcon /> <span className="underline"> Domain: </span> </span> 
-                    <ul className="px-6 list-disc">
-                    {
-                        job.domain.map( (domain, index) => {
-                            return <li key={ index }> {domain} </li>
-                        })
-                    }
-                    </ul>
+                <div className="flex justify-between">
+                    <div>
+                        <span className="flex items-center gap-2 font-bold">   <DomainIcon /> <span className="underline"> Domain: </span> </span> 
+                        <ul className="px-6 list-disc">
+                        {
+                            job.domain.map( (domain, index) => {
+                                return <li key={ index }> {domain} </li>
+                            })
+                        }
+                        </ul>
+                    </div>
+                    <div>
+                        { job.status.toLowerCase() == 'urgent' && <UrgentIcon  />  }
+                    </div>
                 </div>
 
                 { job.workingTime && (

@@ -1,9 +1,9 @@
  
 export interface IJob {
     id: string, 
-    title: string,      // 
+    title: string,      //  
     jobCode: string,    // 
-    status: string,
+    status: string,     // OPEN, CLOSE, URGENT
     reason: string,     
     workingTime: string,    //
     notes: [],              //

@@ -1,6 +1,82 @@
 export const jobs = [ 
+
     {
-        id: 6,
+        id: 12,
+        jobCode: "HLT02",
+        title: "Product Manager (SaaS)",
+        status: "URGENT",     // OPEN, CLOSE
+        reason: "",
+        aboutOurCompany: [
+            "Our company from Singapore",
+            "We are on a mission to enhance the productivity of data teams by applying software engineering best practices to Data Analytics. We are looking for determined and passionate builders to join our team and help drive us toward this mission.",
+            "**Learn by doing, be the owner of what you build** (Discover, Build, Launch, Measure, Learn, Lead)",
+            "🔍 **Discover**: Understand the market and users by leading user/market/competitive research to scope out the right problems, and formulate product strategy for us.",
+            "🔨 **Build**: Translate product strategy to executable plans and objectives, collaborate with Engineering & Design teams to come up with the desirable solutions.",
+            "🚀 **Launch**: Launch the final features/products to the market, clearly communicate product values to users and internal stakeholders.",
+            "📐 **Measure**: Define success metrics, learn from numbers and customer feedback to improve the products.",
+            "🎓 **Learn**: Learn from what you built and shipped, continuously experiment and enhance the quality of the products.",
+            "⭐ **Lead**: Own the products/features, become a decision-maker, and inspire your teammates to achieve the missions together.",
+ 
+        ],
+        notes: [  
+        ],
+        jobDescription: [
+            "We’re looking for a Product Manager who’s excited by this vision to join us on this ambitious product. Freshers are welcome if you believe you are a good fit.", 
+            "You love **problem-solving**, you find it unpleasant when a problem goes unsolved, you want to figure out the root cause to come up with a proper solution.", 
+            "You have **entrepreneurial spirit**. You want to learn how a business or startup operates so that you can eventually start your own.", 
+            "You are a **lifelong learner**, who are curious how the everything works and strive to grow yourself everyday.", 
+            "You **treat yourselves like a product**, always iterating and improving to deliver more value.", 
+            "You believe and want to prove that a **Vietnam-based Product & Engineering Team can build a world-class product**.", 
+            "**Genuine interest in the space:** We’d love to work with people who are genuinely interested in the product and the space we’re in.", 
+            "Great English writing and communication skills.", 
+            "**Bonus - You are a builder**: You have built and launched your own product, or you have a plan to do so.", 
+            "You are welcome if you believe you are good at at least 3 of the skills listed in our competency model, we will help you develop the rest: Fluency with Data, Customer Interview and Qualitative Research, User Experience, Market and Competitive Research, Product Design, Writing Feature Specs, Product Delivery, Product Vision, Strategy and Roadmapping, Business Outcome Ownership, Managing up, Team Leadership, Stakeholder Management", 
+        ],
+        benefit: [
+            "📃 Compensation ",
+            " **Junior PM**: USD 700 - 1700 Gross", 
+            " **PM**: USD 1700 - 2800 Gross", 
+            " **Senior PM**: USD 2800 - 3900 Gross ", 
+            "👨🏼‍💼 **Training & career developments*** ", 
+            " Weekly TED talks to expand skills and knowledge.", 
+            " Yearly budget to support personal and professional growth, well-beings and interest cultivations.",  
+            "🌏 **Competitive salary and benefits***",  
+            " 24/7 Healthcare Insurance, Periodic Medical Checkup.", 
+            " Salary regular reviews, 13-month Bonus.", 
+            " Stock Options for high-contributing individuals.",  
+            "💕 **Awesome company policies***",  
+            " A flexible work culture, Regular reviews, Remote policy.", 
+            " 14 Annual leaves/year, 14 Sick leaves/year, Children care leave policy.", 
+            " Weekly happy hours. Company trip and company-organized events.",  
+            "🏢 **Workstations provided for maximum productivity***",  
+            " MacBook (or Laptop) Grant", 
+            " Mechanical Keyboard + Razer Mouse", 
+            " Big-screen monitor(s)", 
+        ],
+        domain: [ 
+        ],
+        interviewProcess: [
+            "*Round 1**: A short chat with Product Manager", 
+            "**Round 2**: Do take-home assignment (offline - deadline 3 days, will be sent after Round 1)", 
+            "**Round 3**: Technical interview with Product team", 
+        ],  
+        language:[
+            "English: Strong writing"
+        ],
+        level: [
+           "Experience from Junior to Senior"
+        ],
+        location: [   
+            "HCM",
+            "Hybrid",
+            "District 3"
+        ],
+        postDate: "2025/21/04",  
+        salary: "Gross(USD): 3900 (Senior), 2800 (PM), 1700 (Junior)", 
+        workingTime: "From Monday – Friday, from 9.00 a.m. to 6.00 p.m.",
+    }, 
+    {
+        id: 19,
         jobCode: "AN638",
         title: "Senior Full Stack Web3 Engineer",
         status: "OPEN",     // OPEN, CLOSE
@@ -60,7 +136,7 @@ export const jobs = [
     },
 
     {
-        id: 5,
+        id: 15,
         jobCode: "UN02",
         title: "Senior Backend Developer",
         status: "OPEN",     // OPEN, CLOSE
@@ -118,7 +194,7 @@ export const jobs = [
 
 
     {
-        id: 4,
+        id: 21,
         jobCode: "AN609",
         title: "Principal Golang Engineer",
         status: "OPEN",     // OPEN, CLOSE
@@ -190,10 +266,10 @@ export const jobs = [
             "📅 Experience: 3–5 years in DevOps, preferably in finance or banking.",
             "📑 Contract: 9-month, with opportunities to work on innovative technologies across diverse industries.",
         ], 
-        id: 3,
+        id: 24,
         jobCode: "PV3",
         title: "Developers Engineer (With Java Experience)",
-        status: "OPEN",     // OPEN, CLOSE
+        status: "CLOSE",     // OPEN, CLOSE
         reason: "",
         aboutOurCompany: [
             "The company delivers integrated surveillance and security management solutions designed for enterprise-level operations. With a robust portfolio of CCTV systems, AI-powered analytics, and centralized monitoring platforms, it enables businesses and institutions to optimize safety, compliance, and operational oversight. Leveraging deep industry expertise and strong local partnerships, the company supports clients across sectors including transportation, education, and government. Its mission is to drive smarter security infrastructures through innovation, reliability, and scalable technology. By aligning technical excellence with strategic business needs, the company remains a trusted partner in advancing secure and intelligent environments throughout Vietnam and the region.",
@@ -249,7 +325,7 @@ export const jobs = [
     },
 
     {
-        id: 2,
+        id: 9,
         jobCode: "Z3",
         title: "SE (JavaScript, ES6/7, Node.js, C#/.NET Core, Python)",
         status: "OPEN",     // OPEN, CLOSE
