@@ -1,0 +1,20 @@
+.scrolling-container {
+    overflow: hidden; /* Hide the overflow */
+    white-space: nowrap; /* Prevent text from wrapping */
+    width: 100%; /* Full width */
+    position: relative; /* Positioning context */
+}
+
+.scrolling-text {
+    display: inline-block; /* Make it inline for scrolling */
+    animation: scroll 100s linear infinite; /* Animation properties */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start off the right side */
+    }
+    100% {
+        transform: translateX(-100%); /* End off the left side */
+    }
+}
