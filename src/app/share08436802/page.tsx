@@ -14,8 +14,7 @@ export default function Share0843680() {
       }, [] ); 
    
     return ( 
-    <>
-      
+    <> 
       <div className='container flex justify-center w-full mx-auto'>
         <Image src="/images/background.jpg" alt="background" layout="responsive"   width={600} height={200} />
       </div>
@@ -28,4 +27,4 @@ export default function Share0843680() {
       </div>
     </> 
   );
-}
+} 

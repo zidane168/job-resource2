@@ -15,8 +15,8 @@ const useStore = create(( set, get ) => ({  // set, get theo thu tu nha, sai la 
     const jobLists = jobs.filter( job => job.status.toLowerCase() == "open" || job.status.toLowerCase() == "urgent" ).sort((a, b) => b.id - a.id) 
 
     if (title) {
-      const filterJobs = jobLists.filter( (job) => {
-        job.title.toLowerCase().includes( title.toLowerCase() )
+      const filterJobs = jobLists.filter( (job) => {  
+        return job.title.toLowerCase().includes( title.toLowerCase() ) 
       })
       set ({ jobs: filterJobs, loading: false }) 
 

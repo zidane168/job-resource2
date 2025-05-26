@@ -24,7 +24,7 @@ export default function Home() {
         setRemind( str )
     }, [] ); 
 
-    const onClickSearch = ( ) => { 
+    const onClickSearch = ( ) => {  
       fetchJobs( position );  
     }
 
