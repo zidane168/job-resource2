@@ -15,7 +15,7 @@ const JobDetail = () => {
   const {  currentJob, page, loading, error, limit, fetchJobs, getCurrentJob }  = useStore() 
 
   useEffect( () => {
-    getCurrentJob( id );  
+    getCurrentJob(id);   
   }, [])
     
   if (!currentJob) {
