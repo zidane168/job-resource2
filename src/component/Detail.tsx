@@ -140,8 +140,8 @@ export function Detail( { job } : { job : IJob}  ) {
                         </div>
                         <div>
                             <Link href="/">
-                                <button className='w-full p-2 font-bold text-white bg-purple-600 rounded-md hover:bg-purple-400 hover:cursor-pointer' >
-                                    Back to Home Page                        
+                                <button className='w-full p-2 font-bold text-white uppercase bg-purple-600 rounded-md hover:bg-purple-400 hover:cursor-pointer' >
+                                    Xem thêm những job khác tại đây                      
                                 </button>
                             </Link>    
                         </div>

@@ -246,7 +246,7 @@ export const jobs = [
            
         ],
         level: [
-           
+            "Export (10+ YOE), Lead"
         ],
         location: [ 
             "Đống Đa District",

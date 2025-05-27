@@ -48,7 +48,7 @@ const useStore = create(( set, get ) => ({  // set, get theo thu tu nha, sai la 
       jobLists = jobLists.filter( job => { return job.title.toLowerCase().includes(title.toLowerCase()) } )
     } 
 
-    set({ loading: false, jobs: jobLists})   
+    set({ loading: false, jobs: jobLists})
   },
 
   getCurrentJob: (jobCode) => {
