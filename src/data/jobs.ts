@@ -1,5 +1,59 @@
 export const jobs = [ 
 
+     {
+        id: 27,
+        jobCode: "US1",
+        level: [
+           "2+ years"
+        ],
+        title: "Middle Senior Blockchain Developer (Solidity/Rust)",
+        status: "URGENT",     // OPEN, CLOSE, URGENT 
+        location: [               
+            "Remote", 
+            "Part time", 
+            "Full time"
+        ],
+        reason: "",
+        aboutOurCompany: [
+            "We’re a global software team with members in the U.S., France, Brazil, Singapore, and Hong Kong. We build custom software including ERP systems, online games, ecommerce platforms – and now expanding into Web3."
+        ],
+        notes: [  
+        ],
+        jobDescription: [
+            "Highlight your experience with smart contracts (Solidity or Rust) and Web3 projects. Be prepared to collaborate remotely with an international team and show familiarity with dApps, wallets, and Web3 tools.",
+            "Build and maintain smart contracts using Solidity (Ethereum) or Rust (e.g. Solana, Near)", 
+            "Develop dApps and tools using JavaScript/TypeScript", 
+            "Work with crypto wallets and Layer 2 solutions", 
+            "Write clean, maintainable, and secure code", 
+            "Contribute to system design and architecture discussions",
+            "2+ years of experience in backend or blockchain development",  
+            "Proficient in either Solidity or Rust",  
+            "Hands-on experience with Web3 libraries (e.g., Web3.js, Ethers.js)",  
+            "Good understanding of blockchain, smart contracts, and decentralization",  
+            "Familiarity with wallets and Layer 2s is a big plus", 
+        ],
+        benefit: [ 
+            "$60–80/hour", 
+            "Performance-based bonuses", 
+            "Paid vacation", 
+            "Provided laptop", 
+            "Personal development budge", 
+        ],
+        domain: [ 
+            "Outsource"
+        ],
+        interviewProcess: [
+            "CV review ",
+            "Face-to-face interview (includes live coding session)",
+        ],  
+        language:[
+            "English: Fluently"
+        ], 
+        postDate: "2025/24/05",  
+        salary: "$60–80/hour", 
+        workingTime: "at least 4 hours/day",
+    }, 
+
     {
         id: 12,
         jobCode: "HLT02",
