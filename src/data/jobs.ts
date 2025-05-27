@@ -89,7 +89,7 @@ export const jobs = [
             "📃 Compensation ",
             " **Junior PM**: USD 700 - 1700 Gross", 
             " **PM**: USD 1700 - 2800 Gross", 
-            " **Senior PM**: USD 2800 - 3900 Gross ", 
+            " **Senior PM**: USD 2.800 - 3.900 Gross ", 
             "👨🏼‍💼 **Training & career developments*** ", 
             " Weekly TED talks to expand skills and knowledge.", 
             " Yearly budget to support personal and professional growth, well-beings and interest cultivations.",  
@@ -125,7 +125,7 @@ export const jobs = [
             "District 3"
         ],
         postDate: "2025/21/04",  
-        salary: "Gross(USD): 3900 (Senior), 2800 (PM), 1700 (Junior)", 
+        salary: "Gross(USD): 3.900 (Senior), 2.800 (PM), 1.700 (Junior)", 
         workingTime: "From Monday – Friday, from 9.00 a.m. to 6.00 p.m.",
     }, 
     {
