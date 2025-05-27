@@ -1,5 +1,152 @@
 export const jobs = [ 
 
+    {
+        id: 10,
+        jobCode: "Z5",
+        title: "Jira & Confluence Administrator",
+        status: "URGENT",     // OPEN, CLOSE
+        reason: "",
+        aboutOurCompany: [    
+            "For our leading German industrial clients, we close the gap between enterprise IT and new technologies. We are nerds. We are many. We are an interdisciplinary team that doesn't fit into any pigeonhole. Talented, diverse, creative. Together we create space for new things and provide room for development. We operate with flat hierarchies - so flat that you can take on all the responsibility that brings you joy.",
+            "We are expanding our European teams in Stuttgart, Berlin, Lisbon, Barcelona, Figueres and Las Palmas. We are also looking for support at our international locations in Naucalpan de Juárez, Moscow and Ho Chi Minh City.",
+            "Just choose your favorite city! Remote work and travel between our locations is possible    ",
+        ],
+        notes: [
+            "Priority is given to those who have done the solution.", 
+            "Priority is given to having admin certificates provided by Atlassian", 
+            "Send your CV with a video introducing yourself and your work experience in English", 
+            "The following CV will not be suitable:", 
+            "Work as Admin Internal", 
+            "Used to work at companies: Candylio, Pascal", 
+            "Cần ứng viên mạnh và có kinh nghiệm về data center", 
+            "Không nhận người Ấn Độ, ưu tiên người Việt", 
+        ],
+        jobDescription: [
+            "As a JIRA & Confluence Administrator, you will be responsible for configuring, maintaining, and optimizing JIRA/Confluence to support our customers' development and business teams. You will work closely with cross-functional teams to ensure the smooth operation of Atlassian products and 3rd-Party Add-ons as well as their integration with other tools. If you have a deep understanding of JIRA/Confluence and agile methodologies, and you're ready to take on a challenging role, we want to hear from you.",
+            "Use your skills to creatively configure and customize JIRA to meet the unique needs of our enterprise customers.",
+            "Maintain and administer JIRA projects, workflows, Confluence spaces and user permissions, ensuring a seamless user experience.",
+            "Provide expert support and troubleshoot issues related to Atlassian products and add-ons, collaborating with the development team to deliver cutting-edge solutions.",
+            "Collaborate with development teams to understand their requirements and implement JIRA solutions",
+            "Optimize the performance of JIRA and integrate it with other tools like Confluence and Bitbucket for enhanced collaboration and documentation.",
+            "Stay up to date with best practices and industry trends in JIRA administration, agile methodologies, and Confluence, and apply your knowledge to continuously improve.",
+            "Create engaging documentation and training materials for JIRA and Confluence users.",
+            "Gather feedback from stakeholders and continuously improve JIRA and Confluence.",
+           
+            "Bachelor's degree in a relevant field or equivalent work experience.",
+            "2+ years of experience as a JIRA Administrator.",
+            "Strong knowledge of JIRA, including configuration and customization.",
+            "Experience in setting up and managing JIRA projects, workflows, and permissions and integrating them with other tools like Confluence and Bitbucket.",
+            "Familiarity with agile methodologies and software development processes, as well as ITIL base knowledge",
+            "Proficiency in troubleshooting and problem-solving related to Atlassian products and 3rd-party add-ons.",
+            "Excellent communication and collaboration skills, with the ability to work effectively in a fast-paced and dynamic environment.",
+            "Atlassian Certified Confluence Administrator (ACP-CA), Atlassian Certified JIRA Administrator (ACP-JA) or ACP-100 Jira Administration for Data Center certification are a big plus",
+        ],
+        benefit: [
+            "13th month salary and performance bonus", 
+            "Annual performance evaluation, salary increase", 
+            "Participating in social insurance with a full salary", 
+            "Team building - Company trip", 
+            "Multinational, young and dynamic working environment. always share and help you in the working process", 
+            "And some other policies: coffee run, wedding , birth delivery allowance, nursing allowanc", 
+            "17 days annual leave, 05 days sick leave", 
+            "Provide modern equipment and personal laptop to work;", 
+            "Support for getting certification, time for personal improvement", 
+            "Every week at noon on Friday, there will be a happy lunch together", 
+            "Additional Health insurance", 
+        ],
+        domain: [ 
+            "ERP",
+            "Cloud Services",
+            "Outsource"
+        ],
+        interviewProcess: [
+            "2-3 rounds based on Level"
+        ],  
+        language:[
+            "English Fluently"
+        ],
+        level: [
+            "2+ years of experience as a JIRA Administrator"
+        ],
+        location: [   
+            "Hybrid",
+            "HCM",
+            "District 1"
+        ],
+        postDate: "2024/10/01",  
+        salary: "Nego", 
+        workingTime: "",
+    },
+    {
+        id: 8,
+        jobCode: "Z1",
+        title: "Tech Lead/Software Architect (M/F/D)",
+        status: "URGENT",     // OPEN, CLOSE
+        reason: "",
+        aboutOurCompany: [        
+            "For our leading German industrial clients, we close the gap between enterprise IT and new technologies. We are nerds. We are many. We are an interdisciplinary team that doesn't fit into any pigeonhole. Talented, diverse, creative. Together we create space for new things and provide room for development. We operate with flat hierarchies - so flat that you can take on all the responsibility that brings you joy.",
+            "We are expanding our European teams in Stuttgart, Berlin, Lisbon, Barcelona, Figueres and Las Palmas. We are also looking for support at our international locations in Naucalpan de Juárez, Moscow and Ho Chi Minh City.",
+            "Just choose your favorite city! Remote work and travel between our locations is possible."
+        ],
+        notes: [
+        ],
+        jobDescription: [
+            "At least 5+ YOE with variety tech",
+            "Must have experience in Python for 2 years or more (Most recent work experience)",
+            "Send your CV with a video introducing yourself and your work experience in English",
+            "(*) JavaScript (ES6/7, Node.js: must to have",
+            "(*)  Python, C#/.NET Core: nice to have",
+
+            "Good knowledge of the cloud computing (AWS/Azure/Google)",
+            "Expert in at least one programming language and you are well versed in software patterns in design & conception",
+            "Have a strong desire to apply methodological knowledge such as domain-driven design",
+            "Have experience with modeling tools for software architectures like UML and ERD / ERM",
+            "Good knowledge of relational databases (MSSQL, MySQL, ...) and NoSQL databases (DynamoDB, ...) is synergetically complemented by basic knowledge of ElasticSearch",
+
+            "We are looking for senior in nodejs (javascript, typescript), python, react, C#, .NET, ES6/7",
+            "Analyze the challenges of our customers and transfer these into qualified concepts for our cross-functional team",
+            "Advise on specific questions regarding software and cloud architecture for the development of scalable applications, e.g. serverless architectures",
+            "Enrich existing topics and tasks and help to adopt new perspectives",
+            "Bring structure to complex contexts and processes in our projects and involve the entire team in the process",
+            "Take modern automation, CI/CD and infrastructure-as-code into account",
+            "Prepare your work results in a comprehensible, structured and reliable manner and apply target group-oriented storytelling techniques in your communication",
+        ],
+        benefit: [
+            "13th month salary and performance bonus",
+            "Annual performance evaluation, salary increase",
+            "Participating in social insurance with a full salary",
+            "Team building - Company trip",
+            "Multinational, young and dynamic working environment. always share and help you in the working process",
+            "And some other policies: coffee run, wedding, birth delivery allowance, nursing allowance",
+            "17 days annual leave, 05 days sick leave",
+            "Provide modern equipment and personal laptop to work;",
+            "Support for getting certification, time for personal improvement",
+            "Every week at noon on Friday, there will be a happy lunch together",
+            "Additional Health insurance",
+        ],
+        domain: [ 
+            "ERP",
+            "Cloud Services"
+        ],
+        interviewProcess: [
+            "2-3 rounds based on Level",
+        ],  
+        language:[
+            "English Fluently"
+        ],
+        level: [
+          
+        ],
+        location: [               
+            "Dien Bien Phu", 
+            "Da Kao Ward", 
+            "District 1", 
+            "HCM"
+        ],
+        postDate: "2024/04/15",  
+        salary: "Nego", 
+        workingTime: "",
+    },
      {
         id: 27,
         jobCode: "US1",

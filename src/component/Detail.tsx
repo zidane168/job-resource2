@@ -12,6 +12,7 @@ import { BenefitIcon } from './icons/benefitIcon';
 import { LanguageIcon } from './icons/languageIcon';
 import "@/app/globals.css"
 import { LevelIcon } from "./icons/levelIcon";
+import { NoteIcon } from "./icons/noteIcon";
 
 export function Detail( { job } : { job : IJob}  ) {
     return (
@@ -94,6 +95,20 @@ export function Detail( { job } : { job : IJob}  ) {
                         </ul>
                     </div>
 
+                    { job.notes  && (  
+                        <>
+                            <div className='flex items-center gap-2'>
+                                <div> <NoteIcon /> </div> 
+                                <span className='font-bold underline'> Notes: </span>
+                            </div>
+                            <ul className='px-4 list-disc'>
+                                { job.notes.map( (item, index) => {
+                                    return (<li key={ index } > { item}  </li>)
+                                } ) }
+                            </ul>
+                        </>
+                        )
+                    } 
 
                     <div>
                         <div className='flex items-center gap-2'>
