@@ -7,7 +7,7 @@ import useStore from "../store/job";
 import ScrollingText from "@/component/ScrollText"; 
 
 export default function Home() {
-    const { jobs, page, loading, error, limit, fetchJobs }  = useStore()
+    const { jobs, page, loading, error, limit, fetchJobs, fetchJobsSearch }  = useStore()
     const [ remind, setRemind ] = useState<string>('')    
  
     const [ position, setPosition ] = useState<string>('')
@@ -25,7 +25,9 @@ export default function Home() {
     }, [] ); 
 
     const onClickSearch = ( ) => {  
-      fetchJobs( position );  
+ 
+      // fetchJobs( position );   
+      fetchJobsSearch( selectedOption , position )
     }
 
     const handlePositionChange = (e: ChangeEvent<HTMLInputElement> ) => {
@@ -34,10 +36,11 @@ export default function Home() {
 
     const onClickReset = () => { 
       setPosition('')
+      setSelectedOption('');
       fetchJobs( );  
     } 
 
-    const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const handleDropdownlistChange = (event: ChangeEvent<HTMLSelectElement>) => {
         setSelectedOption(event.target.value);
     };
  
@@ -47,21 +50,20 @@ export default function Home() {
         <Image src="/images/background.jpg" alt="background" layout="responsive"   width={600} height={200} />
       </div>
 
-      <div className='container  mx-auto  mt-[10px] mb-[20px]'>
-        
+      <div className='container  mx-auto  mt-[10px] mb-[20px]'> 
         <ScrollingText text={ remind } /> 
-        <div className="flex items-center w-full gap-2 mt-2 p-2 shadow-lg rounded-md">
-          <div className="flex gap-2 grow w-lg items-center">
-            <input className="hover:border-purple-300 p-2 border-2 border-purple-500 rounded-md w-full md:w-lg" placeholder="position" value={ position }  onChange={ handlePositionChange } />
+        <div className="flex items-center w-full gap-2 p-2 mt-2 rounded-md shadow-lg">
+          <div className="flex items-center gap-2 grow w-lg">
+            <input className="w-full p-2 border-2 border-purple-500 rounded-md hover:border-purple-300 md:w-lg" placeholder="position" value={ position }  onChange={ handlePositionChange } />
   
             <div> 
-                <select id="comboBox" value={selectedOption} onChange={handleChange}
-                  className="hover:border-purple-300 p-2 border-2 border-purple-500 rounded-md w-full md:w-lg"  >
+                <select id="comboBox" value={selectedOption} onChange={handleDropdownlistChange}
+                  className="w-full p-2 border-2 border-purple-500 rounded-md hover:border-purple-300 md:w-lg"  >
                     <option value="">Select an option</option> 
-                    <option value="option_remote">Remote</option>                    
-                    <option value="option_onsite">Onsite</option>
-                    <option value="option_hybrid">Hybrid</option>
-                    <option value="option_freelance">Freelance</option>
+                    <option value="1">Remote</option>                    
+                    <option value="2">Onsite</option>
+                    <option value="3">Hybrid</option>
+                    <option value="4">Freelance</option>
                 </select> 
             </div> 
           </div>

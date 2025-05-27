@@ -27,21 +27,26 @@ const useStore = create(( set, get ) => ({  // set, get theo thu tu nha, sai la 
 
   fetchJobsSearch: (location = 1, title = null) => { 
 
+    console.log(location)
+    console.log(title)
+    console.log (' ---------- ')
+
     set({ loading: true, error: null})
     let jobLists = jobs
+
     if (location == 1) {
-      jobLists = jobs.filter( job => job.location.includes( "Remote" ))
+      jobLists = jobs.filter( job => { return job.location.some( loc => loc.toLowerCase().includes( "remote" ) ) } )
 
     } else if (location == 2) {
-      jobLists = jobs.filter( job => job.location.include( "Onsite" ))
+      jobLists = jobs.filter( job => { return job.location.some( loc => loc.toLowerCase().includes( "onsite" ) ) } )
 
     } else if (location == 3) {
-      jobLists = jobs.filter( job => job.location.include( "Hybrid" ))
+      jobLists = jobs.filter( job => { return job.location.some( loc => loc.toLowerCase().includes( "hybrid" ) ) })
     }
 
     if (title) {
-      jobLists = jobLists.filter( job => job.title.toLowerCase() == title.toLowerCase() )
-    }
+      jobLists = jobLists.filter( job => { return job.title.toLowerCase().includes(title.toLowerCase()) } )
+    } 
 
     set({ loading: false, jobs: jobLists})
   },
@@ -82,20 +87,16 @@ const useStore = create(( set, get ) => ({  // set, get theo thu tu nha, sai la 
   //         jobsQuery = query(
   //           jobsCollection,  
   //         ); 
-  //       }
-       
-  //     } else {
-
+  //       } 
+  //     } else { 
   //       // Load more  
   //       jobsQuery = query(jobsCollection,  orderBy('id', "desc"), limit(get().limit), startAfter(get().lastVisible));
   //     }
- 
   //     const querySnapshot = await getDocs(jobsQuery);
   //     const jobs = querySnapshot.docs.map(doc => ({
   //       id: doc.id,
   //       ...doc.data(),
-  //     }));
- 
+  //     })); 
 
   //     // Update lastVisible to the last document fetched
   //     const lastVisible = querySnapshot.docs[querySnapshot.docs.length - 1];
