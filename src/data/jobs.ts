@@ -1,5 +1,61 @@
 export const jobs = [ 
-
+{
+        id: 28,
+        jobCode: "PW4",
+        title: "Full Stack Developer (Mid-Level, Backend)",
+        status: "URGENT",     // OPEN, CLOSE
+        reason: "",
+        aboutOurCompany: [    
+            "We are a pioneering technology platform dedicated to simplifying and automating regulatory compliance processes for businesses in the financial and highly regulated sectors. Driven by a passion for innovation and the agility of a startup, we offer a dynamic work environment where you can make a real impact and help shape the next generation of financial and compliance technology solutions."
+        ],
+        notes: [ 
+            "Candidates should have a minimum of 3 years' experience in full-stack development, with strong proficiency in TypeScript and a solid understanding of JavaScript. Familiarity with NestJS or similar TypeScript-based NodeJS frameworks is required. Experience working with MongoDB is essential, while knowledge of MySQL or PostgreSQL is a plus. ",
+        ],
+        jobDescription: [ 
+            "We are looking for a Full Stack Developer with a strong focus on Backend development to join our product team. You will be working closely with cross-functional teams in a Scrum environment to build and maintain scalable, secure, and efficient features for the Aptvise platform.",
+            "Develop, test, and maintain full-stack features using languages **TypeScript** or **JavaScript**", 
+            "Using the technologies **React**, **Node.js**, and **NestJS** to develop the platform", 
+            "Design and implement backend APIs and services that power the platform's core functionality", 
+            "Work with the infrastructure on **AWS** to deploy and monitor services", 
+            "Collaborate with designers, product managers, and other developers in a Scrum team ", 
+            "Maintain clean, well-documented, and scalable code ", 
+            "Participate in code reviews, technical discussions, and architecture decisions", 
+            "Minimum **3 years of experience** in full-stack development", 
+            "Strong experience with **TypeScript**, and familiar with **JavaScript**", 
+            "Proficiency with React for frontend development and NodeJS for backend development", 
+            "Have knowledge of NestJS or other NodeJS framework based on TypeScript", 
+            "Experience with MongoDB; MySQL or PostgreSQL is a plus", 
+            "Familiar with job queue or message queue architecture", 
+            "Experience working with cloud infrastructure, especially **AWS**", 
+            "Experience working in a **Scrum** team or Agile environment", 
+            "Should have a start up spirit", 
+            "Proficient in **reading and writing English**", 
+        ],
+        benefit: [ 
+            "Experience in the fintech or compliance industry", 
+            "Familiarity with CI/CD pipelines", 
+            "Knowledge of application security and data privacy best practices", 
+        ],
+        domain: [  
+        ],
+        interviewProcess: [ 
+            "review CV -->  Test --> Interview, Test duration is 1 hour- please remind candidates no cheating (Referring to external source) during the test, and to answer all the questions",
+        ],  
+        language:[
+            "English Fluently"
+        ],
+        level: [
+            "3+ YOE"
+        ],
+        location: [   
+            "Onsite",
+            "District 1",
+            "HCM", 
+        ],
+        postDate: "2025/05/28",  
+        salary: "Gross 28 mil", 
+        workingTime: "8:30AM to 5:30PM, 1 hour for lunch from 12PM - 1PM",
+    },
     {
         id: 10,
         jobCode: "Z5",
