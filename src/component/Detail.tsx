@@ -37,6 +37,17 @@ export function Detail( { job } : { job : IJob}  ) {
                                 <div className="px-2 font-bold text-white bg-green-500 rounded-md">{ job.level }  </div>
                             </div>
                         </div>
+                    )} 
+
+
+                    { job.jobCode && (
+                        <div className="flex gap-2">
+                            <div> <JobCodeIcon /> </div>
+                            <div className="flex gap-2"> 
+                                <span className="font-bold underline"> JobCode: </span>  
+                                <div className="px-2 font-bold ">{ job.jobCode }  </div>
+                                </div>
+                        </div>
                     )}
                     
                     <div className='mt-[5px] flex gap-2 mb-2 '>
