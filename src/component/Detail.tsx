@@ -13,6 +13,7 @@ import { LanguageIcon } from './icons/languageIcon';
 import "@/app/globals.css"
 import { LevelIcon } from "./icons/levelIcon";
 import { NoteIcon } from "./icons/noteIcon";
+import { JobCodeIcon } from "./icons/jobCodeIcon";
 
 export function Detail( { job } : { job : IJob}  ) {
     return (
@@ -37,9 +38,8 @@ export function Detail( { job } : { job : IJob}  ) {
                                 <div className="px-2 font-bold text-white bg-green-500 rounded-md">{ job.level }  </div>
                             </div>
                         </div>
-                    )} 
-
-
+                    )}  
+                    
                     { job.jobCode && (
                         <div className="flex gap-2">
                             <div> <JobCodeIcon /> </div>
