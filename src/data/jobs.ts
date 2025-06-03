@@ -40,7 +40,7 @@ export const jobs = [
             "Typescript", "NestJS", "MongoDB", "PostgreSQL",
         ],
         interviewProcess: [ 
-            "review CV -->  Test --> Interview, Test duration is 1 hour- please remind candidates no cheating (Referring to external source) during the test, and to answer all the questions",
+            "review CV --> Interview --> Live Test, Test duration is 1 hour - please remind candidates no cheating (Referring to external source) during the test, and to answer all the questions",
         ],  
         language:[
             "English Fluently"
