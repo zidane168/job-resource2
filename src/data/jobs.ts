@@ -37,6 +37,7 @@ export const jobs = [
             "Knowledge of application security and data privacy best practices", 
         ],
         domain: [  
+            "Typescript", "NestJS", "MongoDB", "PostgreSQL",
         ],
         interviewProcess: [ 
             "review CV -->  Test --> Interview, Test duration is 1 hour- please remind candidates no cheating (Referring to external source) during the test, and to answer all the questions",
