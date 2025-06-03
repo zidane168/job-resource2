@@ -62,7 +62,7 @@ export function Summary( { job } : { job : IJob}  ) {
                         }
                         </ul>
                     </div>
-                    <div>
+                    <div  >
                         { job.status.toLowerCase() == 'urgent' && <UrgentIcon  />  }
                     </div>
                 </div>
