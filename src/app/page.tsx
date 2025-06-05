@@ -48,9 +48,10 @@ export default function Home() {
     <>
       <div className='container flex justify-center w-full mx-auto'>
         <Image src="/images/background.jpg" alt="background" layout="responsive"   width={600} height={200} />
-      </div>
+      </div> 
 
       <div className='container  mx-auto  mt-[10px] mb-[20px]'> 
+         <div className="p-4 italic">Version: 1.0.1</div>
         <ScrollingText text={ remind } /> 
         <div className="flex items-center w-full gap-2 p-2 mt-2 rounded-md shadow-lg">
           <div className="flex items-center gap-2 grow w-lg">
