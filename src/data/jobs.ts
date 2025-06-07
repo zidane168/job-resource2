@@ -1,8 +1,8 @@
 export const jobs = [ 
 
   {
-        id: 1022,
-        jobCode: "PW3",
+        id: 1022,       // row 22 ben non-it
+        jobCode: "NonIT-PW3",
         title: "Sales Executives B2B - Financial Service",
         status: "URGENT",     // OPEN, CLOSE
         reason: "",
@@ -62,7 +62,7 @@ export const jobs = [
 
     {
         id: 1013,
-        jobCode: "LT",
+        jobCode: "NonIT-LT",
         title: "Nhân viên Sales cước Logistics",
         status: "URGENT",     // OPEN, CLOSE
         reason: "",
