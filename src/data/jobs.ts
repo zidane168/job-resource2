@@ -54,6 +54,7 @@ export const jobs = [
         location: [   
             "District 1",
             "HCM", 
+            "Full time"
         ],
         postDate: "2025/05/27",  
         salary: "Gross 18-20 mil", 
@@ -106,6 +107,7 @@ export const jobs = [
             "1+ YOE"
         ],
         location: [   
+            "Full time",
             "Phú Nhuận",
             "HCM", 
         ],
