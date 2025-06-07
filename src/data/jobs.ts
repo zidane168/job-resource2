@@ -1,5 +1,60 @@
 export const jobs = [ 
-{
+
+    {
+        id: 1013,
+        jobCode: "LT",
+        title: "Nhân viên Sales cước Logistics",
+        status: "URGENT",     // OPEN, CLOSE
+        reason: "",
+        aboutOurCompany: [   
+            "Khách hàng là một trong những công ty hàng đầu Việt Nam về Dịch vụ Logistics và chuyển phát nhanh nội địa và quốc tế. "
+        ],
+        notes: [ 
+            "Bắt buộc có kinh nghiệm Sale Logistics", 
+            "Biết Tiếng Trung là lợi thế ", 
+            "Công ty chuyên khu vực châu Á ", 
+            "Chỉ có kinh nghiệm express sẽ không phù hợp", 
+        ],
+        jobDescription: [ 
+            "Tìm kiếm khách hàng sử dụng dịch vụ cước biển / hàng không/ chuyển phát nhanh/ khai quan/ vận chuyển nội địa", 
+            "Báo giá , đàm phán, thuyết phục khách hàng", 
+            "Phối hợp với các bộ phận để hoàn thành công việc", 
+            "Báo cáo kinh doanh hàng tháng", 
+            "Đề xuất định hướng phát triển kinh doanh", 
+            "Kinh nghiệm từ 1 năm sales logistics trở lên",
+            "Có khách hàng sẵn là lợi thế",
+            "Biết tiếng Trung là lợi thế",
+        ],
+        benefit: [ 
+            "Hoa hồng cao lên đến 35%, thưởng Tết, du lịch hàng năm, sinh nhật, team building", 
+            "Thu nhập hấp dẫn: lương cứng 15 triệu + hoa hồng", 
+            "Tham gia BHXH theo quy định Nhà nước", 
+            "Lương Tháng 13...", 
+            "Đồng nghiệp có chuyên môn và nhiệt tình hỗ trợ trong công việc", 
+        ],
+        domain: [  
+            "Logistics",
+            "Sales"
+        ],
+        interviewProcess: [ 
+            "1 vòng phỏng vấn duy nhất"
+        ],  
+        language:[
+            "Không yêu cầu ngôn ngữ, tuy nhiên biết tiếng Trung là lợi thế"
+        ],
+        level: [
+            "1+ YOE"
+        ],
+        location: [   
+            "Phú Nhuận",
+            "HCM", 
+        ],
+        postDate: "2025/02/25",  
+        salary: "15 triệu lương cứng + Hoa hồng lên đến 35%", 
+        workingTime: "Thứ 2 đến thứ 6: 8h00 - 17h30 | Thứ 7: 8h00 - 12h00",
+    },
+
+    {
         id: 28,
         jobCode: "PW4",
         title: "Full Stack Developer (Mid-Level, Backend)",
