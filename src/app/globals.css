@@ -43,7 +43,7 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-    left: 120px;
+    left: 280px;
     color: white;
     padding: 2rem;
     max-width: 1200px;
@@ -67,7 +67,7 @@ body {
 
 .hero-image {
     width: 1420px;
-    max-width: 1900px;
+    /* max-width: 1900px; */
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     transform: perspective(1000px) rotateX(5deg);
@@ -90,5 +90,30 @@ body {
   .hero-content { 
       left: 0px; 
       max-width: 50% !important
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .hero {
+      position: relative;
+      /* height: 100vh; */
+      display: flex;
+      align-items: center;           
+      overflow: hidden; 
+  }
+
+  .hero-content { 
+      left: 0px; 
+      max-width: 50% !important
+  }
+}
+
+
+
+@media only screen and (max-width: 1420px) { 
+
+  .hero-content { 
+      left: 10px; 
+      max-width: 100% !important
   }
 }
