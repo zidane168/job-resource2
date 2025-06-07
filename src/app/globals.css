@@ -26,3 +26,69 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: 'Roboto', sans-serif;
 }
+
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;           
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    left: 120px;
+    color: white;
+    padding: 2rem;
+    max-width: 1200px;
+}
+
+.hero-title {
+    font-family: 'ZCOOLKuaiLe', cursive;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-image {
+    width: 1420px;
+    max-width: 1900px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: perspective(1000px) rotateX(5deg);
+    transition: transform 0.5s ease;
+}
+
+.hero-image:hover {
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+      position: relative;
+      /* height: 100vh; */
+      display: flex;
+      align-items: center;           
+      overflow: hidden; 
+  }
+
+  .hero-content { 
+      left: 0px; 
+      max-width: 50% !important
+  }
+}

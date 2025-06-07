@@ -45,19 +45,23 @@ export default function Home() {
     };
  
     return ( 
-    <>
-      <div className='container flex justify-center w-full mx-auto'>
-        <Image src="/images/background.jpg" alt="background" layout="responsive"   width={600} height={200} />
-      </div> 
+      <> 
 
-      <div className='container  mx-auto  mt-[10px] mb-[20px]'> 
-         <div className="p-4 italic">Version: 1.0.1</div>
-        <ScrollingText text={ remind } /> 
-        <div className="flex items-center w-full gap-2 p-2 mt-2 rounded-md shadow-lg">
-          <div className="flex items-center gap-2 grow w-lg">
-            <input className="w-full p-2 border-2 border-purple-500 rounded-md hover:border-purple-300 md:w-lg" placeholder="position" value={ position }  onChange={ handlePositionChange } />
+        <section className="hero">
+            <div className="hero-content"> 
+                <Image src="/images/background.jpg" alt="background" width={600} height={200}  
+                className="hero-image" />
+            </div> 
+        </section>
+
+        <div className='container  mx-auto  mt-[10px] mb-[20px]'> 
+         <div className="p-4 italic">Version: 1.0.2</div>
+          <ScrollingText text={ remind } /> 
+          <div className="flex items-center w-full gap-2 p-2 mt-2 rounded-md shadow-lg">
+            <div className="flex items-center gap-2 grow w-lg">
+              <input className="w-full p-2 border-2 border-purple-500 rounded-md hover:border-purple-300 md:w-lg" placeholder="position" value={ position }  onChange={ handlePositionChange } />
   
-            <div> 
+              <div> 
                 <select id="comboBox" value={selectedOption} onChange={handleDropdownlistChange}
                   className="w-full p-2 border-2 border-purple-500 rounded-md hover:border-purple-300 md:w-lg"  >
                     <option value="">Select an option</option> 
@@ -66,37 +70,29 @@ export default function Home() {
                     <option value="3">Hybrid</option>
                     <option value="4">Freelance</option>
                 </select> 
-            </div> 
-          </div>
-
-          <div className="flex gap-2">   
-            <div> 
-              <button onClick={ onClickSearch } className="p-2 text-white bg-pink-600 rounded-md hover:bg-pink-300 hover:cursor-pointer w-[100px]"> Search </button>
+              </div> 
             </div>
 
-            <div> 
-              <button onClick={ onClickReset } className="p-2 text-white bg-purple-600 rounded-md hover:bg-purple-300 hover:cursor-pointer w-[100px]"> 
-                Reset 
-              </button> 
+            <div className="flex gap-2">   
+              <div> 
+                <button onClick={ onClickSearch } className="p-2 text-white bg-pink-600 rounded-md hover:bg-pink-300 hover:cursor-pointer w-[100px]"> Search </button>
+              </div>
+
+              <div> 
+                <button onClick={ onClickReset } className="p-2 text-white bg-purple-600 rounded-md hover:bg-purple-300 hover:cursor-pointer w-[100px]"> 
+                  Reset 
+                </button> 
+              </div>
             </div>
-          </div>
+          </div> 
+
+          { 
+            jobs.length == 0 && 
+              <div className='h-[800px] w-full shadow-lg rounded-md text-[50px] flex items-center justify-center mt-4 text-red-500'> NO JOBS AVAILABLE NOW, PLEASE COME BACK LATER </div>
+          } 
+
+          { jobs && <SummaryList jobs={ jobs } /> } 
         </div>
-
-        {/* 
-        ko cần form 
-        <div className='flex gap-4 mb-[40px] mt-[20px]'>
-          <input value="Skills" className='w-full p-2 border rounded-md'/>
-          <input value="Location" className='w-full p-2 border rounded-md'/>
-          <button type="submit" className="p-2 font-bold text-white uppercase bg-purple-500 rounded-md"> Search </button>
-        </div> */}
-
-        { 
-          jobs.length == 0 && 
-            <div className='h-[800px] w-full shadow-lg rounded-md text-[50px] flex items-center justify-center mt-4 text-red-500'> NO JOBS AVAILABLE NOW, PLEASE COME BACK LATER </div>
-        } 
-
-        { jobs && <SummaryList jobs={ jobs } /> } 
-      </div>
-    </> 
+      </> 
   );
 }
