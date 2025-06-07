@@ -3,7 +3,7 @@ export const jobs = [
   {
         id: 1022,
         jobCode: "PW3",
-        title: "Nhân viên Sales cước Logistics",
+        title: "Sales Executives B2B - Financial Service",
         status: "URGENT",     // OPEN, CLOSE
         reason: "",
         aboutOurCompany: [   
