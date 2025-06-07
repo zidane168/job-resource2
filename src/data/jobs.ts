@@ -1,5 +1,65 @@
 export const jobs = [ 
 
+  {
+        id: 1022,
+        jobCode: "PW3",
+        title: "Nhân viên Sales cước Logistics",
+        status: "URGENT",     // OPEN, CLOSE
+        reason: "",
+        aboutOurCompany: [   
+            "We are a fast-growing company based in District 1, Ho Chi Minh City, offering innovative financial services including insurance, loans, and grants. With a startup spirit and a regional vision, we aim to help businesses in Singapore and across Asia access essential financial solutions through technology and personalized support.",
+        ],
+        notes: [ 
+            "Candidates should have 2–3 years of experience in B2B sales",  
+            "preferably within the financial services or fintech industry. ",
+            "They must possess strong English communication skills, both written and spoken."
+        ],
+        jobDescription: [ 
+            "We are seeking a dynamic, tech-savvy B2B Sales Executive to drive growth for our financial services offerings—including insurance, loans, grants, and related solutions. ",
+            "You will be responsible for identifying and closing opportunities with business clients in Singapore and, in the near future, across broader Asian markets.",
+            "This role is ideal for someone who thrives in a startup environment, enjoys autonomy, and brings both strategic thinking and executional excellence to the table.",
+            "Identify, target, and develop new B2B opportunities within financial services sectors (insurance, lending, grants, etc.).", 
+            "Build strong relationships with SME and enterprise clients in Singapore and across Asia.", 
+            "Present and pitch financial products clearly and persuasively to business stakeholders.", 
+            "Work independently to manage leads, follow-ups, proposals, and contract negotiations.", 
+            "Collaborate with internal product, marketing, and tech teams to align sales strategies with business goals.", 
+            "Leverage digital tools and CRM systems to track pipeline and performance metrics.", 
+
+            "**2–3 years of B2B sales experience**, ideally in **financial services** or fintech sectors.", 
+            "**Excellent spoken and written English**; Chinese is an optional.", 
+            "Strong ability to **work independently** and think **logically** and **analytically**.", 
+            "Demonstrated **startup spirit**—you’re proactive, resilient, and self-motivated.", 
+            "**Comfortable with digital tools**, CRM systems, and eager to embrace new technology.", 
+            "Passionate about helping businesses navigate and access financial solutions.", 
+            "Strong **interpersonal skills** with a **client-first mindset**.", 
+        ],
+        benefit: [ 
+            "A collaborative and supportive team that values innovation and growth.",
+            "Exposure to a fast-growing startup ecosystem with a clear growth pathway.",
+            "Direct impact on scaling financial solutions across Asia.",
+        ],
+        domain: [  
+            "Fintech",
+            "Sales"
+        ],
+        interviewProcess: [ 
+            "review CV -->  Test --> Interview"
+        ],  
+        language:[
+            "English: Fluently",
+        ],
+        level: [
+            "1+ YOE"
+        ],
+        location: [   
+            "District 1",
+            "HCM", 
+        ],
+        postDate: "2025/05/27",  
+        salary: "Gross 18-20 mil", 
+        workingTime: "8:30AM to 5:30PM, 1 hour for lunch from 12PM - 1PM",
+    },
+
     {
         id: 1013,
         jobCode: "LT",
