@@ -120,7 +120,7 @@ export const jobs = [
         id: 28,
         jobCode: "PW4",
         title: "Full Stack Developer (Mid-Level, Backend)",
-        status: "CLOSE",     // OPEN, CLOSE
+        status: "URGENT",     // OPEN, CLOSE
         reason: "",
         aboutOurCompany: [    
             "We are a pioneering technology platform dedicated to simplifying and automating regulatory compliance processes for businesses in the financial and highly regulated sectors. Driven by a passion for innovation and the agility of a startup, we offer a dynamic work environment where you can make a real impact and help shape the next generation of financial and compliance technology solutions."
